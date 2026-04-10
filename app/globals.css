@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-velora-maroon: #5c1a1a;
+  --color-velora-maroon-deep: #3d1212;
+  --color-velora-gold: #c9a227;
+  --color-velora-gold-light: #e8d48b;
+  --color-velora-cream: #faf7f2;
+  --color-velora-ink: #1a1412;
+  --color-velora-muted: #6b5e56;
+
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-elevated: 0 25px 50px -12px rgb(0 0 0 / 0.18);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[var(--color-velora-cream)] text-[var(--color-velora-ink)] antialiased;
+    font-family: var(--font-sans);
+  }
+}
